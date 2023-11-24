@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="filescss/zakaz.css">
+</head>
+<body>
+
+    <nav>
+        <a class="navbar-brand" href="index.html"><img src="photos/home.png" alt="Home">Back Home</a>
+        <a class="navbar-brand" href="zakaz.html"><img src="photos/cart.png" alt="Cart"> Cart  &#10103; </a>
+    </nav>
+
+    <hr class="hrtop">
+
+    <div style="padding-top: 10px; text-align: center;" class="form">
+        <b>Placing an order </b>
+    </div>
+    <div class="form" style="font-size:large; margin-bottom: 10px; text-align: center;">
+        <b>Your contact details</b>
+    </div>
+
+    <div class="form">
+        <form method="get">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="phone">Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" pattern="^(\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2})|(\d{2}\d{3}\d{3}\d{2}\d{2})$" placeholder="+380">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="example@ukr.net">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name"><t>Name</t></label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Alex" >
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="surname">Surname</label>
+                    <input type="text" class="form-control" id="surname" name="surname" placeholder="Ivanov">
+                </div>
+            </div>
+        
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <button class="facebook-btn btn">Login with Facebook</button>
+                </div>
+                <div class="form-group col-md-6">
+                    <button class="google-btn btn">Login with Google</button>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="city">Select City</label>
+                    <select class="form-control" id="city" name="city">
+                        <option value="standart" disabled selected>Select City</option>
+                        <option value="city1">Odessa</option>
+                        <option value="city2">Kiev</option>
+                        <option value="city3">Kharkhiv</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="payment">Select Payment Method</label>
+                    <select class="form-control" id="payment" name="payment">
+                        <option value="" disabled selected>Select Payment Method</option>
+                        <option value="card">Payment by card</option>
+                        <option value="onDelivery">Payment on delivery</option>
+                        <option value="installments">Payment in installments</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="form-row" style="margin-bottom: 50px;">
+                <div class="form-group col-md-12">
+                    <input type="submit" class="btn btn-primary" value="Send">
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <t>&copy; 2001–2023 "Shop" online store!</t>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
